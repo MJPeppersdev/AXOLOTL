@@ -1,0 +1,29 @@
+appId: com.electron.axolotl
+copyright: Michael J Peppers
+productName: AXOLOTL
+publish:
+- provider: github
+  owner: McGdevfunk824
+  repo: AXOLOTL
+directories:
+  output: dist/
+mac:
+  category: public.app-category.business
+  target:
+    - zip
+    - dmg
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+        - ia32
+    - target: portable
+      arch:
+        - x64
+        - ia32
+linux:
+  category: Office
+  target:
+    - deb
+    - AppImage
