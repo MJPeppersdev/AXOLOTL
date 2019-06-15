@@ -3,7 +3,7 @@ copyright: Michael J Peppers
 productName: AXOLOTL
 publish:
 - provider: github
-  owner: McGdevfunk824
+  owner: MJPeppersdev
   repo: AXOLOTL
 directories:
   output: dist/
