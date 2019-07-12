@@ -1,4 +1,4 @@
 # AXOLOTL
 AXOLOTL is bringing sexy back to the world of Invoicing. Create beautiful invoices on your desktop without breaking a sweat.
 
-![default-logo](https://user-images.githubusercontent.com/28616709/59557386-aef58f00-8f8d-11e9-9135-3067b2e3fbcd.png)
+![AXOLOTL](https://user-images.githubusercontent.com/28616709/61146263-7662ab80-a48e-11e9-8561-69946add2da4.png)
