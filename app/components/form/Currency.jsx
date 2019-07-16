@@ -1,3 +1,4 @@
+// Libs
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 const appConfig = require('electron').remote.require('electron-settings');
@@ -26,7 +27,7 @@ export class Currency extends PureComponent {
   componentWillReceiveProps(nextProps) {
     // Already made changes but not saved
     if (this.state !== this.props.savedSettings) {
-      // Reset to savedSettings if the below condition is met
+      // Reset to savedSettings if the below confition is met
       if (nextProps.currency === nextProps.savedSettings) {
         this.setState(nextProps.savedSettings, () => {
           this.updateCurrencyState();
@@ -62,6 +63,7 @@ export class Currency extends PureComponent {
   }
 
   sortCurrencies() {
+    // Sort currencies
     const currenciesKeys = keys(currencies);
     const currenciesKeysAndValues = currenciesKeys.map(key => [
       key,
