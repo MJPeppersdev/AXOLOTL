@@ -7,17 +7,17 @@ exports[`Renders correctly to the DOM matches snapshot 1`] = `
   <td
     className="Table__TDStyle-cAmfHP hlnQVD"
   >
-    Jon Snow
+    Tony Stark
   </td>
   <td
     className="Table__TDStyle-cAmfHP jrRCak"
   >
-    jon@snow.hbo
+    ironman@starkindustries.com
   </td>
   <td
     className="Table__TDStyle-cAmfHP jrRCak"
   >
-    000-000-000
+    000-000-0000
   </td>
   <td
     className="Table__TDStyle-cAmfHP evw"
