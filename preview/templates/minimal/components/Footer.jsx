@@ -1,3 +1,4 @@
+// React Libraries
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -23,37 +24,38 @@ const Column = styled.div`
   `};
 `;
 
+// Component
 function Footer({ t, invoice, profile, configs }) {
-    const currentLanguage = configs.language;
-    const { tax, recipient } = invoice;
-    return (
-        <Wrapper>
-            <Column left>
-                <h4>className="label">{profile.company}</h4>
-                <p>{profile.fullname}</p>
-                <p>{profile.address}</p>
-                <p>{profile.email}</p>
-                <p>{profile.phone}</p>
-                 { tax && <p>Tax ID: { tax.tin }</p> }
-            </Column>
-            {configs.showRecipient && (
-                <Column right>
-                    <h4 className="label">{t('preview:common:billedTo', {lng: currentLanguage})}</h4>
-                    <p>{recipient.company}</p>
-                    <p>{recipient.fullname}</p>
-                    <p>{recipient.email}</p>
-                    <p>{recipient.phone}</p>
-                </Column>
-            )}
-        </Wrapper>
-    );
+  const currentLanguage = configs.language;
+  const { tax, recipient } = invoice;
+  return (
+    <Wrapper>
+      <Column left>
+        <h4 className="label">{profile.company}</h4>
+        <p>{profile.fullname}</p>
+        <p>{profile.address}</p>
+        <p>{profile.email}</p>
+        <p>{profile.phone}</p>
+        { tax && <p>Tax ID: { tax.tin }</p> }
+      </Column>
+      {configs.showRecipient && (
+        <Column right>
+          <h4 className="label">{t('preview:common:billedTo', {lng: currentLanguage})}</h4>
+          <p>{recipient.company}</p>
+          <p>{recipient.fullname}</p>
+          <p>{recipient.email}</p>
+          <p>{recipient.phone}</p>
+        </Column>
+      )}
+    </Wrapper>
+  );
 }
 
 Footer.propTypes = {
-    configs: PropTypes.object.isRequired,
-    invoice: PropTypes.object.isRequired,
-    profile: PropTypes.object.isRequired,
-    t: PropTypes.func.isRequired,
+  configs: PropTypes.object.isRequired,
+  invoice: PropTypes.object.isRequired,
+  profile: PropTypes.object.isRequired,
+  t: PropTypes.func.isRequired,
 };
 
 export default Footer;

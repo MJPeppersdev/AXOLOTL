@@ -1,6 +1,8 @@
+// Libs
 import React from 'react';
 import PropTypes from 'prop-types';
 
+// Styling
 import { Section, Label } from '../shared';
 
 function Template({ t, template, handleInputChange, UILang }) {

@@ -1,8 +1,10 @@
+// Libs
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 const ipc = require('electron').ipcRenderer;
 import i18n from '../../i18n/i18n';
 
+// Style
 import styled from 'styled-components';
 const OverflowWrapper = styled.div`
   min-width: 150px;
@@ -21,11 +23,13 @@ const Wrapper = styled.div`
   height: 100%;
   min-height: min-content;
   padding: 20px;
+
   > div:last-child {
     flex: 1 0 auto;
   }
 `;
 
+// Components
 import AccentColor from '../components/sidebar/AccentColor';
 import Actions from '../components/sidebar/Actions';
 import Alignment from '../components/sidebar/Alignment';

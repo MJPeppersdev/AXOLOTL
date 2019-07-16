@@ -1,8 +1,11 @@
+// React Libraries
 import React from 'react';
 import PropTypes from 'prop-types';
 
+// Helper
 import { setBaseFontSize } from '../../helper';
 
+// Styles
 import styled from 'styled-components';
 const Invoice = styled.div`
   display: flex;
@@ -48,11 +51,13 @@ const Invoice = styled.div`
   }
 `;
 
+// Child Components
 import Logo from './components/Logo';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
 
+// Component
 function Business(props) {
   return (
     <Invoice baseFontSize={setBaseFontSize(props.configs.fontSize)}>

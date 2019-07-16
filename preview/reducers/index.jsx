@@ -1,3 +1,4 @@
+// Libs
 import * as ACTION_TYPES from '../constants/actions';
 import { createSelector } from 'reselect';
 import { handleActions } from 'redux-actions';
@@ -11,16 +12,16 @@ const initialState = {
   invoice: {},
   profile: profileSettings,
   configs: {
-    
+    // Set default from settings
     dateFormat: invoiceSettings.dateFormat,
     language: generalSettings.language,
     template: invoiceSettings.template,
     accentColor: '#2CCCE4',
-    
+    // Other settings
     logoSize: '20',
     fontSize: '200',
     alignItems: 'middle',
-    
+    // Toggle
     showLogo: true,
     useSymbol: true,
     customAccentColor: true,
@@ -68,9 +69,11 @@ const RootReducer = handleActions(
 
 export default RootReducer;
 
+// Selectors
 const getState = state => state;
 export const getConfigs = createSelector(getState, state => state.configs);
 export const getInvoice = createSelector(getState, state => state.invoice);
 export const getProfile = createSelector(getState, state => state.profile);
 export const getUILang  = createSelector(getState, state => state.ui.language);
 export const getInvoiceLang  = createSelector(getState, state => state.invoice.language);
+

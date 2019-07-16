@@ -1,3 +1,4 @@
+// React Libraries
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -15,23 +16,24 @@ const InvoiceFooter = styled.div`
   `};
 `;
 
+// Component
 function Footer({ t, invoice, configs }) {
-    const { language, accentColor, customAccentColor } = configs;
-    return invoice.note ? (
-        <InvoiceFooter
-            accentColor={accentColor}
-            customAccentColor={customAccentColor}
-        >
-            <h4>{ t('preview:common:notice', {lng: language}) }</h4>
-            <p>{invoice.note}</p>
-        </InvoiceFooter>
-    ) : null;
+  const { language, accentColor, customAccentColor  } = configs;
+  return invoice.note ? (
+    <InvoiceFooter
+      accentColor={accentColor}
+      customAccentColor={customAccentColor}
+    >
+      <h4>{ t('preview:common:notice', {lng: language}) }</h4>
+      <p>{invoice.note}</p>
+    </InvoiceFooter>
+  ) : null;
 }
 
 Footer.propTypes = {
-    configs: PropTypes.object.isRequired,
-    invoice: PropTypes.object.isRequired,
-    t: ProptTypes.func.isRequired,
+  configs: PropTypes.object.isRequired,
+  invoice: PropTypes.object.isRequired,
+  t: PropTypes.func.isRequired,
 };
 
 export default Footer;

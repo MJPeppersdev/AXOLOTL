@@ -1,6 +1,8 @@
+// React Libraries
 import React from 'react';
 import PropTypes from 'prop-types';
 
+// Styles
 import styled from 'styled-components';
 const Invoice = styled.div`
   display: flex;
@@ -32,12 +34,15 @@ const Invoice = styled.div`
   }
 `;
 
+// Helper
 import { setBaseFontSize } from '../../helper';
 
+// Child Components
 import Header from './components/Header.jsx';
 import Main from './components/Main.jsx';
 import Footer from './components/Footer.jsx';
 
+// Component
 function Minimal(props) {
   return (
     <Invoice baseFontSize={setBaseFontSize(props.configs.fontSize)}>

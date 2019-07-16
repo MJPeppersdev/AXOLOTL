@@ -1,12 +1,13 @@
+// React Libraries
 import React from 'react';
 import PropTypes from 'prop-types';
 import { truncate } from 'lodash';
 const moment = require('moment');
 
-
+// Helper
 import { calTermDate } from '../../../../helpers/date';
 
-
+// Styles
 import styled from 'styled-components';
 
 const InvoiceHeader = styled.div`
@@ -60,7 +61,7 @@ const Heading = styled.h1`
   `};
 `;
 
-
+// Component
 function Header({ t, invoice, profile, configs }) {
   const { tax, recipient } = invoice;
   const { language, accentColor, customAccentColor  } = configs;
