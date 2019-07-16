@@ -1,3 +1,4 @@
+// Libs
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { compose } from 'recompose';
@@ -14,6 +15,7 @@ const ItemDiv = styled.div`
   flex-direction: row;
   justify-content: space-between;
   flex: 1;
+
   & > div {
     display: flex;
     flex-direction: row;
