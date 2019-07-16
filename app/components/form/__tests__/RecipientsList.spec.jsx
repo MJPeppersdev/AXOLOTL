@@ -1,3 +1,4 @@
+// Libs
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
@@ -10,14 +11,14 @@ const contacts = [
   {
     _id: 'first-contact',
     fullname: 'Tony Stark',
-    company: 'Stark Industries',
+    company: 'Avengers',
     email: 'ironman@starkindustries.com',
   },
   {
     _id: 'second-contact',
     fullname: 'Steve Rogers',
-    company: 'SHIELD',
-    email: 'captainamerica@shield.com',
+    company: 'Avengers',
+    email: 'cap@gmail.com',
   },
 ];
 const selectedContact = {};
