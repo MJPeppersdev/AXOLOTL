@@ -1,6 +1,6 @@
 module.exports = {
-    getInvoiceValue: jest.fn(() => ({
-      subtotal: 'subTotal',
-      grandTotal: 'grandTotal',
-    })),
-  };
+  getInvoiceValue: jest.fn(() => ({
+    subtotal: 'subTotal',
+    grandTotal: 'grandTotal',
+  })),
+};

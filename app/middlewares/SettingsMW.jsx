@@ -1,3 +1,4 @@
+// Node Libs
 const appConfig = require('electron').remote.require('electron-settings');
 import sounds from '../../libs/sounds';
 const ipc = require('electron').ipcRenderer;

@@ -12,7 +12,7 @@ describe('Form Middleware', () => {
   });
 
   describe('should handle FORM_SAVE action', () => {
-    it('should save Invoice, save Contact and Clear the Form', () => {
+    it('should save Invocie, save Contact and Clear the Form', () => {
       // Setup
       getState = jest.fn(() => ({
         form: {

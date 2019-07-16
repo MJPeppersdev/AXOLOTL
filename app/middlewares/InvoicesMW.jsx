@@ -1,3 +1,4 @@
+// Node Libs
 import uuidv4 from 'uuid/v4';
 import currencies from '../../libs/currencies.json';
 const appConfig = require('electron').remote.require('electron-settings');

@@ -1,3 +1,4 @@
+// Node Libs
 const appConfig = require('electron').remote.require('electron-settings');
 import uuidv4 from 'uuid/v4';
 import i18n from '../../i18n/i18n';

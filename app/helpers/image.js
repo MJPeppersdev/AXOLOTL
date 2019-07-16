@@ -1,4 +1,3 @@
-  
 const Jimp = require('jimp');
 const fs = require('fs');
 const isSvg = require('is-svg');
@@ -24,7 +23,7 @@ function processImg(filePath, callback) {
     return;
   }
 
-  // Handle PNG or JPEG image files
+  // Normal Image File such as PNG or JPEG
   Jimp.read(filePath, (err, image) => {
     if (err) handleError(err);
     try {

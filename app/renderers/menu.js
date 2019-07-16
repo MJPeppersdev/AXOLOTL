@@ -1,3 +1,4 @@
+// Libs
 const { Menu, BrowserWindow } = require('electron').remote;
 const appConfig = require('electron').remote.require('electron-settings');
 const ipc = require('electron').ipcRenderer;

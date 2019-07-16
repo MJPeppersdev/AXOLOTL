@@ -8,7 +8,7 @@ const contactDoc = {
 };
 
 const invoiceDoc = {
-  id: 'stark-invoice',
+  id: 'tony-invoice',
   recipient: {
     fullname: 'Tony Stark',
     email: 'ironman@starkindustries.com',
@@ -16,8 +16,8 @@ const invoiceDoc = {
   rows: [
     {
       id: uuidv4(),
-      description: 'Arc reactors',
-      price: '10000000',
+      description: 'Dragons',
+      price: '100',
       quantity: '3',
     },
   ],
