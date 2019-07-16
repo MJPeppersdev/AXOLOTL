@@ -38,3 +38,4 @@ describe('should return correct format number', () => {
     expect(formattedNumber3).toEqual('1 999.99');
   });
 })
+
