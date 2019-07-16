@@ -1,3 +1,4 @@
+// Libs
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
@@ -37,7 +38,7 @@ describe('Recipient Form component', () => {
   });
 
   // METHOD
-  // it('handleInputChange correctly', () => {
+  // it('handleInputCHange correctly', () => {
     // const fullname = wrapper.find('input').at(0);
     // fullname.simulate('change', {
     //   target: { name: 'fullname', value: 'new-name' },
