@@ -15,22 +15,27 @@ exports.devServer = ({ host, port } = {}) => ({
   plugins: [new webpack.HotModuleReplacementPlugin()],
 });
 
+// Source Map
 exports.generateSourceMaps = ({ type }) => ({
   devtool: type,
 });
 
+// Check Duplicates
 exports.checkDuplicate = options => ({
   plugins: [new DuplicatePackageCheckerPlugin(options)],
 });
 
+// Clean between builds
 exports.clean = path => ({
   plugins: [new CleanWebpackPlugin([path])],
 });
 
+// JS Minification
 exports.minifyJavaScript = () => ({
   plugins: [new BabelWebpackPlugin()],
 });
 
+// Analyzing Bundle
 exports.analyzeBundle = () => ({
   plugins: [new BundleAnalyzerPlugin()],
 });
