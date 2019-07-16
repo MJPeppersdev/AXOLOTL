@@ -1,11 +1,13 @@
 import * as ACTION_TYPES from '../constants/actions.jsx';
 import { createAction } from 'redux-actions';
 
+// Recipient
 export const updateRecipient = createAction(
   ACTION_TYPES.FORM_RECIPIENT_UPDATE,
   data => data
 );
 
+// ItemsRow
 export const addItem = createAction(ACTION_TYPES.FORM_ITEM_ADD);
 
 export const removeItem = createAction(
@@ -23,9 +25,13 @@ export const moveRow = createAction(
   (dragIndex, hoverIndex) => ({ dragIndex, hoverIndex })
 );
 
+// Form Actions
 export const clearForm = createAction(
   ACTION_TYPES.FORM_CLEAR,
   (event, muted = false) => muted
+  // Since clearForm can be called via click event or from other action
+  // such as saveForm, the first argument will be resreved for event and
+  // the second one will be used to determined whether to play a sound or not
 );
 
 export const saveFormData = createAction(ACTION_TYPES.FORM_SAVE);
